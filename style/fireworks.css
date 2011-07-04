@@ -1,5 +1,10 @@
 /* fireworks styles */
 
+body {
+ margin: 0px;
+ padding: 0px;
+}
+
 #fireworks-template {
  display:none;
 }

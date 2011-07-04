@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="demo-only/demo.css" media="screen" />
 <script type="text/javascript" src="demo-only/demo.js"></script>
 <!--script type="text/javascript" src="script/debug.js"></script-->
-<script type="text/javascript" src="script/soundmanager.js"></script>
+<script type="text/javascript" src="script/soundmanager2-nodebug-jsmin.js"></script>
 <script type="text/javascript" src="script/fireworks.js"></script>
 </head>
 
@@ -21,17 +21,10 @@
 
  Fireworks elements (cloned and animated via script):
  
- #sound
  #fireworks-template
  #fireContainer
 
- #sound is optional and can be omitted (as can the related .js.)
-
 -->
-
-<div id="sound">
-
-</div>
 
 <div id="fireworks-template">
  <div id="fw" class="firework"></div>
@@ -243,6 +236,16 @@
  <h4>Download</h4>
 
  <dl class="standard">
+
+  <dt><a href="fireworks0.9.1.20110703.zip">Fireworks v0.9.1.20110703</a></dt>
+  <dd>
+   <ul>
+    <li>Upgraded audio to SoundManager 2, now works in more places</li>
+    <li>Basic code clean-up, appease the JSLINT gods</li>
+    <li>Also <a href="https://github.com/scottschiller/fireworks.js">on Github</a></li>
+   </ul>
+  </dd>
+
   <dt><a href="fireworks0.9.20050609.zip">Fireworks v0.9.20050609</a></dt>
   <dd>
    <ul>
@@ -251,11 +254,10 @@
     <li>Likely the first and last, but hey!</li>
    </ul>
   </dd>
+
  </dl>
 
- <h3>Resources</h3>
-
- <p>Still have to finish this part. ;)</p>
+ <h3>Related reading</h3>
 
  <ul>
   <li><a href="http://www.schillmania.com/content/projects/javascript-animation-1/">Javascript Animation Tutorial Part 1: The Basics</a></li>
@@ -266,10 +268,6 @@
 <div id="footer"></div>
 
 </div>
-
-<script type="text/javascript">
-if (typeof(soundManagerInit)!='undefined') soundManagerInit();
-</script>
 
 </body>
 </html>

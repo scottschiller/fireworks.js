@@ -245,7 +245,9 @@ function demoInit() {
 }
 
 function demoDestuctor() {
-  fc.controller.destructor();
+  if (fc.controller) {
+    fc.controller.destructor();
+  }
   fc.controller = null;
 }
 
