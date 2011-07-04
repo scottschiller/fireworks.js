@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- SoundManager Flash configuration -->
+<!-- Sound IDs are referenced from JS -->
+
+<items baseHref="audio/" defaultVol="30">
+ <sound id="fire0" href="boom3.mp3" />
+ <sound id="fire1" href="boom4.mp3" />
+ <sound id="boom0" href="boom1.mp3" />
+ <sound id="boom1" href="boom2.mp3" />
+ <sound id="boom2" href="pop1.mp3" />
+ <sound id="boom3" href="pop2.mp3" />
+ <sound id="boom4" href="pop3.mp3" />
+ <sound id="boom5" href="pop4.mp3" />
+ <sound id="boom6" href="pop5.mp3" />
+ <sound id="boom7" href="pop6.mp3" />
+</items>

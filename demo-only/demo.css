@@ -1,0 +1,426 @@
+/*
+   Fireworks demo page styles
+   --------------------------
+   Not required for your use!
+*/
+
+body {
+ font:normal 76% verdana,arial,tahoma,helvetica;
+ background:#000;
+ color:#bbb;
+ margin:0px;
+ padding:0px;
+ text-align:center;
+}
+
+#site {
+ width:75%;
+ margin:0px auto;
+ border:4px dashed #1c1c1c;
+ border-top:none;
+ border-bottom:none;
+ padding:0px;
+ padding-top:0.25em;
+ text-align:left;
+ font-size:1em;
+}
+
+#content {
+ background:#222 url(fireworks-header.jpg) repeat-x 0px 0px;
+ padding:2em;
+ border-top:none;
+ border-bottom:none;
+ *height:100%; /* stupid IE content redraw fix */
+}
+
+#site.hideStuff p,
+#site.hideStuff ul,
+#site.hideStuff #controls,
+#site.hideStuff dl,
+#site.hideStuff h3,
+#site.hideStuff h4 {
+ /* hides most page content (performance tweak) */
+ display:none;
+}
+
+#site.hideStuff .showAlways {
+ display:block;
+}
+
+.showAlways {
+ font-family:arial,tahoma,verdana,"sans serif";
+ font-size:0.9em;
+}
+
+a {
+ text-decoration:none;
+ color:#6699cc;
+}
+
+a:hover {
+ color:#99ccff;
+}
+
+h1, h2, h3, h4 {
+ font:normal 4.5em georgia,"times new roman",geneva,helvetica,verdana,arial;
+ margin:0px;
+ padding:0px;
+ color:#cccc66;
+ color:#00ccff;
+}
+
+h1 {
+ color:#eee;
+ margin-bottom:0px;
+}
+
+h2 {
+ font-size:2.2em;
+ margin-bottom:1em;
+}
+
+h3 {
+ font-size:1.5em;
+ margin-top:1em;
+ margin-bottom:0.5em;
+ padding-top:0.3em;
+ padding-bottom:0.3em;
+ text-indent:30px;
+ background:transparent url(item.gif) no-repeat 0px 50%;
+ color:#eee;
+}
+
+h4 {
+ font:italic 1.2em georgia,"times new roman",verdana,tahoma,arial,"sans serif";
+ margin-top:1em;
+ margin-bottom:0.5em;
+ color:#ddd;
+}
+
+dl.standard dd {
+ margin-left:0px;
+ font-size:0.9em;
+ color:#999; 
+}
+
+#fireButton {
+ position:relative;
+ clear:both;
+ padding-top:10px;
+ margin-top:10px;
+}
+
+#fireIE {
+ /* IE PNG tomfoolery */
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/button.png');
+}
+
+#fireButton.hover #fireIE {
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/button-1.png');
+}
+
+#fireIE,
+#fireButton .content {
+ position:absolute;
+ left:0px;
+ top:0px;
+}
+
+#fireButton .content {
+ padding-left:8px;
+ margin-top:1px;
+ font-weight:bold;
+}
+
+#fireButton,
+#fireIE {
+ width:100px;
+ height:36px;
+ padding-top:5px;
+ text-align:center;
+ line-height:32px;
+ color:#999;
+}
+
+#fireButton {
+ background:transparent url(button.png) no-repeat 0px 0px;
+ *background:transparent url();
+}
+
+#fireButton:hover {
+ background:transparent url(button-1.png) no-repeat 0px 0px;
+}
+
+#fireButton a {
+ color:#ccc;
+ cursor:pointer;
+ cursor:hand;
+ display:block;
+ width:88px;
+ text-align:center;
+ padding-right:0.25em;
+ text-decoration:none;
+ background:transparent none;
+}
+
+#fireButton a:hover {
+ color:#fff;
+}
+
+#content ul li {
+ margin-left:0px;
+}
+
+html>body #content ul {
+}
+
+#content p,
+#content ul li {
+ line-height:1.8em;
+}
+
+
+.clear {
+ float:none;
+ clear:both;
+ font-size:1px;
+ height:1px;
+ line-height:1px;
+ margin-top:-1px;
+ overflow:hidden;
+}
+
+.compact {
+ margin:0px;
+ margin:0.5em 0px 0.5em 0px;
+}
+
+.crunch {
+ padding:0px;
+ margin:0px;
+}
+
+.note,
+.footnote {
+ font-size:0.9em;
+ font-style:italic;
+ color:#999;
+ margin-bottom:1.5em;
+}
+
+.footnote {
+ margin-top:0px;
+ font-size:0.8em;
+}
+
+#controls {
+ margin-top:1.5em;
+ font-size:0.85em;
+}
+
+#options {
+ float:left;
+ display:inline;
+ margin-bottom:0.5em;
+}
+
+#controls .checkbox {
+ float:left;
+ display:inline;
+ width:21.2em;
+ margin-right:2.5em;
+}
+
+#controls .checkbox div {
+ /* tab */
+ width:5em;
+ padding:0.4em;
+ border:1px solid #1c1c1c;
+ border-bottom:none;
+ background:#202020;
+}
+
+#controls .checkbox div,
+#controls .checkbox input {
+ font-family:arial,tahoma,verdana,"sans serif";
+ font-size:1em;
+ vertical-align:middle;
+}
+
+#controls dl {
+ width:21em;
+}
+
+#controls dl.col {
+ position:relative;
+ float:left;
+ display:inline;
+ margin:0px;
+ margin-right:1em;
+ padding:0.75em;
+ height:12.4em;
+ border:1px solid #1c1c1c;
+ background:#202020;
+}
+
+#controls .disabled {
+ color:#333;
+}
+
+#controls .disabled dt,
+#controls .disabled dd {
+ color:#4f4f4f;
+}
+
+#controls dl dd p {
+ margin:0px;
+ padding:0px;
+}
+
+#controls dt,
+#controls dd {
+ margin:0px;
+ padding:0px;
+}
+
+#controls dt {
+ float:left;
+ display:inline;
+ padding-right:0.7em;
+ margin-right:0.7em;
+ border-right:1px solid #444;
+ font-weight:bold;
+ font-style:italic;
+ color:#eee;
+}
+
+#controls dd {
+ margin:0px;
+ padding:0px;
+ font-size:0.9em;
+ vertical-align:middle;
+ color:#6699cc;
+}
+
+#controls .title {
+ float:left;
+ display:inline;
+ margin-right:0.6em;
+ color:#999;
+}
+
+/* those slider bits you might be wondering about */
+
+#controls .control {
+ position:relative;
+ border-left:0px;
+ width:214px;
+ height:20px;
+}
+
+#controls .control .bar {
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:214px;
+ height:20px;
+ background:transparent url(../demo-only/slider-bar.gif) no-repeat 0px 9px;
+ cursor:pointer;
+ cursor:hand;
+}
+
+#controls .control .slider {
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:20px;
+ height:20px;
+ background:transparent url(../demo-only/slider.png) no-repeat 0px 0px;
+ *background:none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/slider.png');
+ cursor:pointer;
+ cursor:hand;
+}
+
+#controls .control .slider:hover {
+ background:transparent url(../demo-only/slider-1.png) no-repeat 0px 0px;
+ *background:none;
+}
+
+#controls .control .slider.hover {
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/slider-1.png');
+}
+
+#controls .disabled .control .slider {
+ background:transparent url(../demo-only/slider-disabled.png) no-repeat 0px 0px;
+ *background:none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/slider-disabled.png');
+}
+
+#controls .disabled .control .slider:hover {
+ background:transparent url(../demo-only/slider-disabled-1.png) no-repeat 0px 0px;
+ *background:none;
+}
+
+#controls .disabled .control .slider.hover {
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='demo-only/slider-disabled-1.png');
+}
+
+/* options */
+
+#options {
+ width:17.5em;
+ height:12.4em;
+ margin-bottom:0px;
+ margin-right:1em;
+ padding:0.75em;
+ border:1px solid #1c1c1c;
+ background:#202020;
+ font-size:1em;
+}
+
+#options h4 {
+ font-size:0.9em;
+ font-weight:bold;
+ font-style:italic;
+}
+
+#options dl,
+#options dd,
+#options dt {
+ margin:0px;
+ padding:0px;
+ line-height:1.5em;
+}
+
+#options dt {
+ float:left;
+ display:inline;
+ clear:left;
+ margin-right:0px;
+ border-right:none;
+}
+
+#options dd {
+ display:block;
+ line-height:2em;
+}
+
+input {
+ font:normal 0.95em arial,tahoma,verdana,"sans serif";
+}
+
+#code {
+ margin-top:1em;
+}
+
+code {
+ font-size:1.2em;
+ *font-size:1em;
+ color:#99cc99;
+}
+
+#footer {
+ height:24px;
+ background:#222 url(bottom.gif) repeat-x 0px 0px;
+}
